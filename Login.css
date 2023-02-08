@@ -1,0 +1,58 @@
+:root {
+    --hue: 200;
+    --saturation: 50%;
+    --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+    --background-color: hsl(var(--hue), var(--saturation), 20%);
+    }
+    
+    body {
+    text-align: left;
+    margin: 0;
+    background-image: url(SpaceMan\ -\ Edited.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background-color);
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: var(--foreground-color);
+    font-size: 20px;
+    }
+    
+    h1 {
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 60px;
+    }
+    
+    h2 {
+    padding-left: 50px;
+    font-size: 30px;
+    }
+    
+    #loginStatus {
+    font-style: normal;
+    color: red;
+    font-size: 30px;
+    }
+    
+    #loginForm {
+    padding-left: 50px;
+    }
+    
+    #firstName, #lastName, #badgeNumber, #launchCode {
+    background-color: var(--background-color);
+    opacity: 15%;
+    color: var(--foreground-color);
+    font-size: 30px;
+    }
+    
+    #submitButton {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    border-style: groove;
+    border-color: var(--foreground-color);
+    font-size: 40px;
+    margin-top: 20px;
+    width: 300px;
+    height: 60px;
+    }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Ellis "Malachi" Daniels -->
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="Login.css">
+            <script src = "Login.js"></script>
+            <title>Login Page</title>
+        </head>
+        <body>
+            <h1>Welcome Future Cadet:</h1>
+            <br/>
+            <h2>Login</h2>
+            <br/>
+            <form id="loginForm" onsubmit="return false">
+                First Name: <input type= "text" id = "firstName"/>
+                <br/>
+                Last Name: <input type= "text" id = "lastName"/>
+                <br/>
+                Badge Number: <input type = "number" id = "badgeNumber"/>
+                <br/>
+                Launch Code: <input type = "number" id = "launchCode"/>
+                <br/>
+                <input type = "submit" id = "submitButton" onclick = "checkCreds();"/>
+                <p id="loginStatus"></p>
+            </form>
+    
+        </body>
+    </html>

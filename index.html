@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Ellis "Malachi" Daniels -->
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="blastoff.css">
+           <script src = "Loop.js"></script>
+           <script src = "Login.js"></script>
+               <title>UAT Space Program</title>
+   </head>
+   <body>
+       <img id = "logo" src="uatSpaceLogo.jpg"/> 
+       <h1> UAT Space Program </h1>
+          <p> Welcome <strong id="user">Student</strong> to your very own UAT ROCKET LAUNCH Simulator!</p>                                              <!-- So most of my JS code is actually implimented on the countdown.js file -->
+       <p> Please <strong id="loginplease">LOGIN</strong> to Launch your rocket! </p>
+       <br>
+           <button id = "launch" onclick = "countDown()" disabled>LAUNCH</button>
+           <button id = "abort" onclick = "Abort()" disabled>ABORT</button> <!-- Instead of stopping the function from the push button the "stop" button reloads the page creating the illusion that it stopped it -->
+           <br>
+           <button id = "login" onclick = "LogIn()">LOGIN</button>
+           <button id = "signout" onclick = "SignOut()" disabled>SIGN OUT</button>
+           <button id = "switchuser" onclick = "SwitchUser()" disabled>SWITCH USER</button>
+           <script>
+            document.getElementById("loginplease").style.color = "rgb(13,255,160)";
+            document.getElementById("launch").style.color = "rgb(0,128,128,.4)";
+            document.getElementById("launch").style.background = "rgb(0,128,128,.2)";
+            document.getElementById("abort").style.color = "rgb(0,128,128,.4)";
+            document.getElementById("abort").style.background = "rgb(0,128,128,.2)";
+            document.getElementById("signout").style.color = "rgb(0,128,128,.4)";
+            document.getElementById("signout").style.background = "rgb(0,128,128,.2)";
+            document.getElementById("switchuser").style.color = "rgb(0,128,128,.4)";
+            document.getElementById("switchuser").style.background = "rgb(0,128,128,.2)";
+           </script>
+
+       <p id ="countdownTimer">
+           <strong>
+             <!-- This is Where the launch countdown will take place -->
+           </strong>
+       </p>
+       <br/>
+       <p id = "halfway"> 
+        
+       </p>
+   </body>
+</html>

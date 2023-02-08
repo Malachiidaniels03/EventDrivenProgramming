@@ -1,0 +1,75 @@
+:root {
+    --hue: 200;
+    --saturation: 50%;
+    --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+    --background-color: hsl(var(--hue), var(--saturation), 20%);
+    }
+    body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    text-align: center;
+    background-color:var(--background-color)
+    }
+    h1 {
+    font-size: 75px;
+    color: var(--foreground-color);
+    text-align: center;
+    margin: 20px 0;
+    }
+    p {
+    font-size: 18px;
+    color: var(--foreground-color);
+    text-align: center;
+    margin: 10px 0;
+    }
+    button {
+    font-size: xx-large;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    border-style: outset;
+    margin: 10px;
+    }
+    #countdownTimer {
+    font-size: 100px;
+    color: var(--foreground-color);
+    text-align: center;
+    }
+    #halfway {
+    font-size: xx-large;
+    color: darkblue;
+    text-align: center;
+    }
+    button#launch {
+    width: 150px;
+    }
+    button#abort {
+    width: 150px;
+    }
+    button#login, 
+    button#signout, 
+    button#switchuser {
+    font-size: large;
+    width: 150px;
+    text-align: left;
+    }
+    #launchTable {
+        font-size: large;
+        width: 750px;
+        text-align: center;
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 10px;
+        margin-top: 20px;
+        margin-left: 0;
+        color: var(--foreground-color);
+        clear: both;
+        display: block;
+    }
+    
+    #launchTable td, 
+    #launchTable th {
+    border: 1px solid var(--foreground-color);
+    padding: 4px;
+    text-align: left;
+    }
+    #launchTable tr:nth-child(even){background-color: var(--foreground-color);}
+    #launchTable tr:nth-child(odd){background-color: var(--background-color);}

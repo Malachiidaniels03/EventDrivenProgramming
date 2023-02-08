@@ -1,0 +1,84 @@
+:root {
+    --hue: 6666;
+    --saturation: 50%;
+    --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+    --background-color: hsl(var(--hue), var(--saturation), 20%);
+    }
+    #logo {
+        border-radius: 190px;
+        border-style: inset;
+        border-width: 25px;
+        border-color: var(--foreground-color);
+    }
+    body {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        text-align: center;
+        background-image: url(SpaceMan\ -\ Edited.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-color:rgba(0, 0, 0, 0.959);
+    }    
+    h1 {
+    font-size: 150px;
+    color: var(--foreground-color);
+    text-align: center;
+    margin: 40px 0;
+    }
+    p {
+    font-size: 36px;
+    color: var(--foreground-color);
+    text-align: center;
+    margin: 20px 0;
+    }
+    button {
+    font-size: xx-large;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    border-style: outset;
+    margin: 20px;
+    }
+    #countdownTimer {
+    font-size: 120px;
+    color: var(--foreground-color);
+    text-align: center;
+    background-color: rgb(24,24,24,0.5);
+    }
+    #halfway {
+    font-size: xx-large;
+    color: rgb(13,255,160);
+    text-align: center;
+    background-color: rgb(24,24,24,0.5);
+    }
+    button#launch {
+    width: 300px;
+    }
+    button#abort {
+    width: 300px;
+    }
+    button#login,
+    button#signout,
+    button#switchuser {
+    font-size: x-large;
+    width: 300px;
+    text-align: center;
+    }
+    #launchTable {
+        font-size: x-large;
+        width:max-content;
+        margin: 40px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        color: var(--foreground-color);
+        clear: both;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #launchTable td, 
+    #launchTable th {
+        border: 2px solid var(--foreground-color);
+        padding: 8px;
+        text-align: center;
+    }
+    #launchTable tr:nth-child(even){background-color: var(--background-color);}
+    #launchTable tr:nth-child(odd){background-color: var(--background-color);}

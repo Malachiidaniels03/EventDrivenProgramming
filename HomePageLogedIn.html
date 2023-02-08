@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="blastoff.css">
+           <script src = "Loop.js"></script>
+           <script src = "Login.js"></script>
+               <title>UAT Space Program</title>
+   </head>
+   <body>
+       <h1> UAT Space Program </h1>
+          <p> Welcome <strong id="user">Student</strong> to your very own UAT ROCKET LAUNCH Simulator!</p>                                              <!-- So most of my JS code is actually implimented on the countdown.js file -->
+       <p> Press Start To Launch your rocket! But be Careful! Give the wrong initiation code and the rocket will SELF DISTRUCT! </p>
+       <br>
+           <button id = "launch" onclick = "countDown()">LAUNCH</button>
+           <button id = "abort" onclick = "Abort()">ABORT</button> <!-- Instead of stopping the function from the push button the "stop" button reloads the page creating the illusion that it stopped it -->
+           <br>
+           <button id = "login" onclick = "LogIn()" disabled>LOGIN</button>
+           <button id = "signout" onclick = "SignOut()">SIGN OUT</button>
+           <button id = "switchuser" onclick = "SwitchUser()">SWITCH USER</button>
+           <script>
+            var studentName = localStorage.getItem("StudentName");
+            var user = document.getElementById("user");
+            document.getElementById("user").style.color = "rgb(13,255,160)";;
+            user.innerHTML = studentName; 
+            document.getElementById("login").style.color = "rgb(0,128,128,.3)";
+            document.getElementById("login").style.background = "rgb(0,128,128,.1)";
+            </script>
+       <p id ="countdownTimer">
+           <strong>
+             <!-- This is also the initiation code LOL -->
+           </strong>
+       </p>
+       <br/>
+       <p id = "halfway"> 
+        
+       </p>
+       <table id ="launchTable">
+           <thead>
+               <tr>
+                   <th>Username</th>
+                   <th>Launch Attempt</th>
+                   <th>Successful</th>
+                   <th>Aborted</th>
+                   <th>Self-Destruct</th>
+               </tr>
+           </thead>
+           <tbody>
+               <!-- Add table data here -->
+           </tbody>
+       </table>
+   </body>
+</html>
